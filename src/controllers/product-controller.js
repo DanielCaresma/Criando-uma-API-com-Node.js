@@ -4,9 +4,6 @@
 //Como saber quando usar um codigo de erro/sucesso ou outro (400, 401 ou 200, 201)
 //Como o async e o await funcionam?
 
-const mongoose = require('mongoose');
-const product = require('../models/product');
-const Product = mongoose.model('Product');
 const ValidationContract = require('../validators/fluent-validator');
 const repository = require('../repositories/product-repository');
 
