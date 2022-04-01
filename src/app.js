@@ -3,13 +3,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-
+const config = require('./config');
 
 const app = express();
 const router = express.Router();
 
 //Conecta ao banco
-mongoose.connect('mongodb+srv://daniel:db.493544@maquina-sp.suitj.mongodb.net/maquina-sp?retryWrites=true&w=majority');
+mongoose.connect(config.connetionString);
 
 //Carrega os Models
 const Product = require('./models/product');
