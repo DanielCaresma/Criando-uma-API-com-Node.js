@@ -10,7 +10,7 @@ const router = express.Router();
 
 //Conecta ao banco
 mongoose.connect(config.connetionString);
-
+ 
 //Carrega os Models
 const Product = require('./models/product');
 const Customer = require('./models/customer');
